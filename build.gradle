@@ -3,8 +3,11 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
+
 jar {
-    manifest{
-        attributes 'Main-Class': 'Main'
+    manifest {
+        attributes(
+                'Main-Class': 'Main'
+        )
     }
 }

@@ -15,7 +15,7 @@ import javafx.geometry.*;
 public class AlertBox {
 
 
-    public static void display()
+    public static void display(String message)
     {
         Stage window = new Stage();
 
@@ -28,7 +28,7 @@ public class AlertBox {
         Button closeButton = new Button("OK");
         closeButton.setOnAction(e -> window.close());
 
-        Label mes = new Label("The account has been made");
+        Label mes = new Label(message);
 
         VBox layout = new VBox();
         layout.getChildren().addAll(mes,closeButton);
