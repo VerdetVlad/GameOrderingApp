@@ -1,8 +1,10 @@
-package register;
+package login;
 
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+
+import register.AlertBox;
 
 import javafx.stage.*;
 
@@ -11,18 +13,16 @@ import javafx.scene.layout.*;
 import javafx.scene.control.*;
 import javafx.geometry.*;
 
-
-public class RegisterInterface {
+public class LogInInterface {
 
     private static TextField nameImput, pasImput;
-    private static CheckBox clientBox, managerBox;
 
     public static void display()
     {
         Stage window = new Stage();
 
         window.initModality(Modality.APPLICATION_MODAL);
-        window.setTitle("Registration");
+        window.setTitle("Log In");
         window.setMinWidth(200);
         window.setMinHeight(300);
 
@@ -46,39 +46,28 @@ public class RegisterInterface {
         GridPane.setConstraints(pasImput,1,1);
 
 
-        Label typeLabel = new Label("Account Type:");
-        GridPane.setConstraints(typeLabel,0,3);
-        clientBox = new CheckBox("Client");
-        GridPane.setConstraints(clientBox,1,3);
-        managerBox = new CheckBox("Store Manager");
-        GridPane.setConstraints(managerBox,1,4);
 
 
-
-
-        Button regButton = new Button("Register");
-        GridPane.setConstraints(regButton,2,5);
-        regButton.setOnAction(e ->
+        Button loginButton = new Button("Log In");
+        GridPane.setConstraints(loginButton,2,4);
+        loginButton.setOnAction(e ->
         {
-            MakeAccount.create(nameImput.getText(), pasImput.getText(),
-                    clientBox.isSelected());
-            AlertBox.display("Account created");
+
             window.close();
         });
         Button closeButton = new Button("Close");
-        GridPane.setConstraints(closeButton,0,5);
+        GridPane.setConstraints(closeButton,0,4);
         closeButton.setOnAction(e -> window.close());
 
         grid.getChildren().addAll(nameImput,nameLabel,
                 pasImput,pasLabel,
-                typeLabel,clientBox,managerBox,
-                regButton,closeButton);
+
+                loginButton,closeButton);
 
         grid.setAlignment(Pos.CENTER);
         Scene scene = new Scene(grid);
         window.setScene(scene);
         window.showAndWait();
     }
-
 
 }

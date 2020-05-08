@@ -1,6 +1,7 @@
 package startScreen;
 
 import register.RegisterInterface;
+import login.LogInInterface;
 
 import javafx.geometry.Pos;
 import javafx.scene.layout.VBox;
@@ -36,7 +37,9 @@ public class StartScreen extends Application {
         layout.getChildren().addAll(loginButton,registerButton);
         layout.setAlignment(Pos.CENTER);
         mainScene = new Scene(layout,400,400);
+
         registerButton.setOnAction(e -> RegisterInterface.display());
+        loginButton.setOnAction(e -> LogInInterface.display());
 
 
 

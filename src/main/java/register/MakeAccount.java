@@ -14,8 +14,8 @@ public class MakeAccount {
         final File userDir = new File(mainDir + "\\Users");
         if (!userDir.exists()) userDir.mkdir();
 
-        if (check) name = name + "-C";
-        else name = name + "-M";
+        if (check) name = "C-" + name;
+        else name = "M-" + name;
 
         File nameDir = new File(userDir.getName() + "/" + name);
         if (!nameDir.exists()) nameDir.mkdir();
