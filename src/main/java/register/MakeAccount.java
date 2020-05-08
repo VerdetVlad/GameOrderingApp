@@ -17,11 +17,11 @@ public class MakeAccount {
         if (check) name = "C-" + name;
         else name = "M-" + name;
 
-        File nameDir = new File(userDir.getName() + "/" + name);
+        File nameDir = new File(userDir.getName() + "\\" + name);
         if (!nameDir.exists()) nameDir.mkdir();
 
 
-        File passFile = new File(nameDir + "/password.txt");
+        File passFile = new File(nameDir + "\\password.txt");
 
         boolean flag = false;
         try {

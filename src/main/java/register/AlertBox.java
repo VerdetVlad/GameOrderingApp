@@ -15,12 +15,12 @@ import javafx.geometry.*;
 public class AlertBox {
 
 
-    public static void display(String message)
+    public static void display(String title, String message)
     {
         Stage window = new Stage();
 
         window.initModality(Modality.APPLICATION_MODAL);
-        window.setTitle("Confirmation");
+        window.setTitle(title);
         window.setMinWidth(200);
         window.setMinHeight(100);
 

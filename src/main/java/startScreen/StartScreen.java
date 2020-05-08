@@ -1,5 +1,7 @@
 package startScreen;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+import register.AlertBox;
 import register.RegisterInterface;
 import login.LogInInterface;
 
@@ -39,7 +41,21 @@ public class StartScreen extends Application {
         mainScene = new Scene(layout,400,400);
 
         registerButton.setOnAction(e -> RegisterInterface.display());
-        loginButton.setOnAction(e -> LogInInterface.display());
+        loginButton.setOnAction(e -> {
+
+            int res = LogInInterface.display();
+
+            if(res == 1)
+            {
+                System.out.println("Client");
+            }
+            else
+            {
+                System.out.println("Manager");
+            }
+
+
+        });
 
 
 

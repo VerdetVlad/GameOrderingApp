@@ -62,7 +62,7 @@ public class RegisterInterface {
         {
             MakeAccount.create(nameImput.getText(), pasImput.getText(),
                     clientBox.isSelected());
-            AlertBox.display("Account created");
+            AlertBox.display("Confirmation","Account created");
             window.close();
         });
         Button closeButton = new Button("Close");

@@ -13,11 +13,14 @@ import javafx.scene.layout.*;
 import javafx.scene.control.*;
 import javafx.geometry.*;
 
+import java.io.File;
+
 public class LogInInterface {
 
     private static TextField nameImput, pasImput;
+    private static int returnValue;
 
-    public static void display()
+    public static int display()
     {
         Stage window = new Stage();
 
@@ -47,14 +50,36 @@ public class LogInInterface {
 
 
 
-
         Button loginButton = new Button("Log In");
         GridPane.setConstraints(loginButton,2,4);
         loginButton.setOnAction(e ->
         {
+            File f =CheckData.verifyData(nameImput.getText(), pasImput.getText());
 
-            window.close();
+            if(f == null)
+            {
+                AlertBox.display("Alert","Nu such account.Try again.");
+                returnValue=0;
+
+
+            }
+            else
+            if((f.getName()).charAt(0) == 'C')
+            {
+                AlertBox.display("Success", "Logged In as CLIENT");
+                returnValue=1;
+                window.close();
+
+            }
+            else
+            {
+                AlertBox.display("Success", "Logged In as MANAGER");
+                returnValue=2;
+                window.close();
+            }
+
         });
+
         Button closeButton = new Button("Close");
         GridPane.setConstraints(closeButton,0,4);
         closeButton.setOnAction(e -> window.close());
@@ -68,6 +93,11 @@ public class LogInInterface {
         Scene scene = new Scene(grid);
         window.setScene(scene);
         window.showAndWait();
+
+        return returnValue;
+
     }
+
+
 
 }
