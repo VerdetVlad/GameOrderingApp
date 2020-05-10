@@ -7,6 +7,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import register.AlertBox;
+import register.AlertBox2;
 
 import javafx.geometry.Pos;
 import javafx.scene.layout.*;
@@ -76,18 +77,13 @@ public class GamesListInterface extends Application{
 
 
         Button delButton = new Button("Delete Game");
-        /*delButton.setOnAction(e -> delButtonClick());*/
+        delButton.setOnAction(e -> delButtonClick());
 
 
         HBox hBox = new HBox();
         hBox.setPadding(new Insets(15,15,15,15));
         hBox.setSpacing(10);
         hBox.getChildren().addAll(addName,addGenre,addPrice,addButton,delButton);
-
-
-
-
-
 
 
 
@@ -136,6 +132,18 @@ public class GamesListInterface extends Application{
         addGenre.setValue("Action");
         addPrice.clear();
     }
+
+    public void delButtonClick()
+    {
+
+        if(!(AlertBox2.display("Warning","Are you sure?"))) return;
+
+        ObservableList <GameProduct> selectedProd, allProd;
+        allProd = table.getItems();
+        selectedProd = table.getSelectionModel().getSelectedItems();
+        selectedProd.forEach(allProd::remove);
+    }
+
 
 
 
