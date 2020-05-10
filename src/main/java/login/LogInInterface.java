@@ -18,9 +18,9 @@ import java.io.File;
 public class LogInInterface {
 
     private static TextField nameImput, pasImput;
-    private static int returnValue;
+    private static String returnValue;
 
-    public static int display()
+    public static String display()
     {
         Stage window = new Stage();
 
@@ -59,7 +59,7 @@ public class LogInInterface {
             if(f == null)
             {
                 AlertBox.display("Alert","Nu such account.Try again.");
-                returnValue=0;
+                returnValue=null;
 
 
             }
@@ -67,14 +67,14 @@ public class LogInInterface {
             if((f.getName()).charAt(0) == 'C')
             {
                 AlertBox.display("Success", "Logged In as CLIENT");
-                returnValue=1;
+                returnValue=f.getName();
                 window.close();
 
             }
             else
             {
                 AlertBox.display("Success", "Logged In as MANAGER");
-                returnValue=2;
+                returnValue=f.getName();
                 window.close();
             }
 
