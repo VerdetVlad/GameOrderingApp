@@ -21,9 +21,9 @@ import javafx.application.Application;
 
 public class StartScreen extends Application {
 
-    Stage window;
-    Button loginButton, registerButton;
-    Scene mainScene, regScene;
+    private static Stage window;
+    private static Button loginButton, registerButton;
+    private static Scene mainScene, regScene;
 
     public static void main(String[] args){
         launch(args);
@@ -58,7 +58,7 @@ public class StartScreen extends Application {
             }
             else
             {
-                window.setScene(ManagerMainMenu.getMenu());
+                window.setScene(ManagerMainMenu.getMenu(res));
             }
 
 
@@ -71,5 +71,7 @@ public class StartScreen extends Application {
 
 
     }
+
+
 
 }

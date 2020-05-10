@@ -12,10 +12,10 @@ import java.nio.file.Files;
 public class ReadStoreData {
 
 
-    public static ObservableList<GameProduct> getData(String name)
+    public static ObservableList<GameProduct> getData(String path)
     {
         try {
-            return get(name);
+            return get(path);
         }
         catch (Exception e)
         {

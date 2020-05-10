@@ -17,22 +17,18 @@ import javafx.stage.Stage;
 
 import java.io.BufferedReader;
 
-import javafx.application.Application;
 
-public class GamesListInterface extends Application{
+
+public class GamesListInterface {
 
     private static Stage window;
     private static TableView<GameProduct> table;
-    private  TextField addName, addPrice;
+    private static TextField addName, addPrice;
     private static ChoiceBox<String> addGenre = new ChoiceBox<>();
+    private static ObservableList <GameProduct> products = FXCollections.observableArrayList();
 
-    public static void main(String[] args){
-        launch(args);
 
-    }
-
-    @Override
-    public void start(Stage primaryStage)/* throws Exception*/
+    public static void display(String fileName)
     {
 
 
@@ -69,15 +65,16 @@ public class GamesListInterface extends Application{
         addPrice.setPromptText("Price");
 
 
-
+        Button closeButton = new Button("Close Window");
+        closeButton.setOnAction(e-> window.close());
 
         Button addButton = new Button("Add Game");
-        addButton.setOnAction(e -> addButtonClick());
+        addButton.setOnAction(e -> addButtonClick(fileName));
 
 
 
         Button delButton = new Button("Delete Game");
-        delButton.setOnAction(e -> delButtonClick());
+        delButton.setOnAction(e -> delButtonClick(fileName));
 
 
         HBox hBox = new HBox();
@@ -89,12 +86,12 @@ public class GamesListInterface extends Application{
 
 
         table = new TableView<>();
-        table.setItems(getGames());
+        table.setItems(getGames(fileName));
         table.getColumns().addAll(nameCol,genCol,priceCol);
 
         VBox vBox = new VBox();
         vBox.setPadding(new Insets(10,10,10,10));
-        vBox.getChildren().addAll(table,hBox);
+        vBox.getChildren().addAll(closeButton,table,hBox);
 
 
         Scene scene = new Scene(vBox);
@@ -105,17 +102,18 @@ public class GamesListInterface extends Application{
 
     }
 
-    public static ObservableList<GameProduct> getGames()
+    public static ObservableList<GameProduct> getGames(String fileName)
     {
-        ObservableList <GameProduct> product = FXCollections.observableArrayList();
 
-        product = ReadStoreData.getData("ceva");
 
-        return product;
+        products = ReadStoreData.getData(fileName);
+
+
+        return products;
     }
 
 
-    public void addButtonClick()
+    public static void addButtonClick(String fileName)
     {
         GameProduct game = new GameProduct();
 
@@ -123,14 +121,17 @@ public class GamesListInterface extends Application{
         game.setGenre(addGenre.getValue());
         game.setPrice(Double.parseDouble(addPrice.getText()));
 
+
         table.getItems().add(game);
 
         addName.clear();
         addGenre.setValue("Action");
         addPrice.clear();
+
+        WriteStoreData.writeData(products,fileName);
     }
 
-    public void delButtonClick()
+    public static void delButtonClick(String fileName)
     {
 
         if(!(AlertBox2.display("Warning","Are you sure?"))) return;
@@ -139,6 +140,8 @@ public class GamesListInterface extends Application{
         allProd = table.getItems();
         selectedProd = table.getSelectionModel().getSelectedItems();
         selectedProd.forEach(allProd::remove);
+
+        WriteStoreData.writeData(products,fileName);
     }
 
 
