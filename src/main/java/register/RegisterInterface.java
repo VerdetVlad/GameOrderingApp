@@ -1,8 +1,6 @@
 package register;
 
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 
 import javafx.stage.*;
 
@@ -10,6 +8,9 @@ import javafx.scene.Scene;
 import javafx.scene.layout.*;
 import javafx.scene.control.*;
 import javafx.geometry.*;
+
+import utilities.AlertBox;
+import utilities.SpellCheck;
 
 
 public class RegisterInterface {
@@ -59,15 +60,23 @@ public class RegisterInterface {
         GridPane.setConstraints(regButton,2,5);
         regButton.setOnAction(e ->
         {
+
+            if(InputCheck.badImput(nameImput.getText(),pasImput.getText())) return;
+
+
+            System.out.println("TEST");
             boolean check;
             if(typeImput.getValue().equals("Client")) check = true;
             else check = false;
 
-            MakeAccount.create(nameImput.getText(), pasImput.getText(),
-                                check);
+            MakeAccount.create(nameImput.getText(), pasImput.getText(), check);
             AlertBox.display("Confirmation","Account created");
+
             window.close();
         });
+
+
+
         Button closeButton = new Button("Close");
         GridPane.setConstraints(closeButton,0,5);
         closeButton.setOnAction(e -> window.close());
@@ -82,6 +91,8 @@ public class RegisterInterface {
         window.setScene(scene);
         window.showAndWait();
     }
+
+
 
 
 }

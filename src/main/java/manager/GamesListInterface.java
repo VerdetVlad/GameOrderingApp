@@ -6,17 +6,16 @@ import javafx.geometry.Insets;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
-import register.AlertBox;
-import register.AlertBox2;
+import utilities.AlertBox;
+import utilities.AlertBox2;
 
-import javafx.geometry.Pos;
 import javafx.scene.layout.*;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.BufferedReader;
-
+import register.InputCheck;
+import utilities.SpellCheck;
 
 
 public class GamesListInterface {
@@ -57,7 +56,7 @@ public class GamesListInterface {
         addName.setPromptText("Name");
 
         addGenre.getItems().addAll("Action", "Adventure",
-                                    "Horror","Puzzle",
+                                    "Horror","Puzzle","Racing",
                                     "Shooter","Strategy");
         addGenre.setValue("Action");
 
@@ -117,10 +116,40 @@ public class GamesListInterface {
     {
         GameProduct game = new GameProduct();
 
+        if(SpellCheck.basicCheck(addName.getText()))
+        {
+            addName.clear();
+            addGenre.setValue("Action");
+            addPrice.clear();
+            return;
+        }
         game.setName(addName.getText());
-        game.setGenre(addGenre.getValue());
-        game.setPrice(Double.parseDouble(addPrice.getText()));
 
+
+
+
+        game.setGenre(addGenre.getValue());
+
+        try
+        {
+            if(SpellCheck.tooManyDecimals(Double.parseDouble(addPrice.getText())))
+            {
+                AlertBox.display("Error","Price has too many decimals");
+                addName.clear();
+                addGenre.setValue("Action");
+                addPrice.clear();
+                return;
+            }
+            game.setPrice(Double.parseDouble(addPrice.getText()));
+        }
+        catch (Exception e)
+        {
+            AlertBox.display("Error","Bad Price Imput");
+            addName.clear();
+            addGenre.setValue("Action");
+            addPrice.clear();
+            return;
+        }
 
         table.getItems().add(game);
 
