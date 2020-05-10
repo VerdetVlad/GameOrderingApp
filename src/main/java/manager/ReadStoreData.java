@@ -8,7 +8,8 @@ import java.nio.file.Files;
 
 public class ReadStoreData {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         getData();
     }
 
@@ -17,6 +18,15 @@ public class ReadStoreData {
 
         final File storeFile = new File(System.getProperty("user.dir") +
                                         "\\Stores\\store.txt");
+        try {
+            storeFile.getParentFile().mkdirs();
+            storeFile.createNewFile();
+
+        }
+        catch (Exception e)
+        {
+
+        }
 
         System.out.println(storeFile);
     }

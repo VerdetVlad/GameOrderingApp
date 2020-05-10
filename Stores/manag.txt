@@ -1,2 +1,0 @@
-Nume Joc, Gen, Pret,
-God of War, Action, 25.12,
