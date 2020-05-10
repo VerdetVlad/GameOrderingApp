@@ -109,10 +109,7 @@ public class GamesListInterface extends Application{
     {
         ObservableList <GameProduct> product = FXCollections.observableArrayList();
 
-        product.add(new GameProduct("God_Of_War","action",24.54));
-        product.add(new GameProduct("Ceva","comedy",32.12));
-        product.add(new GameProduct("AltCeva","puzzle",12.12));
-        product.add(new GameProduct("GTA","action",5.60));
+        product = ReadStoreData.getData("ceva");
 
         return product;
     }
