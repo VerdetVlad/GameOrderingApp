@@ -2,17 +2,20 @@ package startScreen;
 
 import com.sun.org.apache.xpath.internal.SourceTree;
 import register.AlertBox;
+
 import register.RegisterInterface;
 import login.LogInInterface;
+import manager.ManagerMainMenu;
 
 import javafx.geometry.Pos;
 import javafx.scene.layout.VBox;
 
-import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
+
+import javafx.application.Application;
 
 public class StartScreen extends Application {
 
@@ -51,7 +54,7 @@ public class StartScreen extends Application {
             }
             else
             {
-                System.out.println("Manager");
+                window.setScene(ManagerMainMenu.getMenu());
             }
 
 
