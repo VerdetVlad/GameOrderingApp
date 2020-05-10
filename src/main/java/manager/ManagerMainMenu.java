@@ -1,5 +1,7 @@
 package manager;
 
+import javafx.geometry.Insets;
+import javafx.scene.layout.HBox;
 import register.AlertBox;
 
 import javafx.geometry.Pos;
@@ -24,14 +26,16 @@ public class ManagerMainMenu {
         ordersButton = new Button("See Orders");
 
 
-        VBox layout = new VBox(20);
+        HBox layout = new HBox();
+        layout.setPadding(new Insets(15,15,15,15));
+        layout.setSpacing(10);
         layout.getChildren().addAll(listButton,ordersButton);
         layout.setAlignment(Pos.CENTER);
         scene = new Scene(layout,400,400);
 
 
         listButton.setOnAction(e -> {
-            AlertBox.display("MENU","MENU");
+
 
         });
 

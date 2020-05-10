@@ -1,6 +1,8 @@
 package startScreen;
 
 import com.sun.org.apache.xpath.internal.SourceTree;
+import javafx.geometry.Insets;
+import javafx.scene.layout.HBox;
 import register.AlertBox;
 
 import register.RegisterInterface;
@@ -38,7 +40,9 @@ public class StartScreen extends Application {
         registerButton = new Button("Register");
 
 
-        VBox layout = new VBox(20);
+        HBox layout = new HBox();
+        layout.setPadding(new Insets(15,15,15,15));
+        layout.setSpacing(10);
         layout.getChildren().addAll(loginButton,registerButton);
         layout.setAlignment(Pos.CENTER);
         mainScene = new Scene(layout,400,400);
@@ -46,9 +50,9 @@ public class StartScreen extends Application {
         registerButton.setOnAction(e -> RegisterInterface.display());
         loginButton.setOnAction(e -> {
 
-            int res = LogInInterface.display();
+            String res = LogInInterface.display();
 
-            if(res == 1)
+            if(res.charAt(0)=='C')
             {
                 System.out.println("Client");
             }
@@ -66,8 +70,6 @@ public class StartScreen extends Application {
         window.show();
 
 
-
     }
-
 
 }
