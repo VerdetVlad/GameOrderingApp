@@ -1,8 +1,6 @@
 package register;
 
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 
 import javafx.stage.*;
 
@@ -11,11 +9,15 @@ import javafx.scene.layout.*;
 import javafx.scene.control.*;
 import javafx.geometry.*;
 
+import utilities.AlertBox;
+import utilities.SpellCheck;
+
 
 public class RegisterInterface {
 
     private static TextField nameImput, pasImput;
-    private static CheckBox clientBox, managerBox;
+    private static ChoiceBox<String> typeImput = new ChoiceBox<>();
+
 
     public static void display()
     {
@@ -48,11 +50,9 @@ public class RegisterInterface {
 
         Label typeLabel = new Label("Account Type:");
         GridPane.setConstraints(typeLabel,0,3);
-        clientBox = new CheckBox("Client");
-        GridPane.setConstraints(clientBox,1,3);
-        managerBox = new CheckBox("Store Manager");
-        GridPane.setConstraints(managerBox,1,4);
-
+        typeImput.getItems().addAll("Client", "Manager");
+        typeImput.setValue("Client");
+        GridPane.setConstraints(typeImput,1,3);
 
 
 
@@ -60,18 +60,30 @@ public class RegisterInterface {
         GridPane.setConstraints(regButton,2,5);
         regButton.setOnAction(e ->
         {
-            MakeAccount.create(nameImput.getText(), pasImput.getText(),
-                    clientBox.isSelected());
+
+            if(InputCheck.badImput(nameImput.getText(),pasImput.getText())) return;
+
+
+            System.out.println("TEST");
+            boolean check;
+            if(typeImput.getValue().equals("Client")) check = true;
+            else check = false;
+
+            MakeAccount.create(nameImput.getText(), pasImput.getText(), check);
             AlertBox.display("Confirmation","Account created");
+
             window.close();
         });
+
+
+
         Button closeButton = new Button("Close");
         GridPane.setConstraints(closeButton,0,5);
         closeButton.setOnAction(e -> window.close());
 
         grid.getChildren().addAll(nameImput,nameLabel,
                 pasImput,pasLabel,
-                typeLabel,clientBox,managerBox,
+                typeLabel,typeImput,
                 regButton,closeButton);
 
         grid.setAlignment(Pos.CENTER);
@@ -79,6 +91,8 @@ public class RegisterInterface {
         window.setScene(scene);
         window.showAndWait();
     }
+
+
 
 
 }

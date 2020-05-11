@@ -41,8 +41,9 @@ public class CheckData {
         File passFile = new File(userLoc + "\\password.txt");
         BufferedReader readPass = new BufferedReader(new FileReader(passFile));
 
-        String passwordAux;
-        if((passwordAux = readPass.readLine())==null) return null;
+        String passwordAux= readPass.readLine();
+        readPass.close();
+        if(passwordAux ==null) return null;
 
         if (password.equals(passwordAux)) return new File(userLoc);
         else return  null;

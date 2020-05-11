@@ -1,10 +1,8 @@
 package login;
 
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-
-import register.AlertBox;
+import utilities.AlertBox;
+import utilities.AlertBox2;
 
 import javafx.stage.*;
 
@@ -18,11 +16,12 @@ import java.io.File;
 public class LogInInterface {
 
     private static TextField nameImput, pasImput;
-    private static int returnValue;
+    private static String returnValue;
 
-    public static int display()
+    public static String display()
     {
         Stage window = new Stage();
+
 
         window.initModality(Modality.APPLICATION_MODAL);
         window.setTitle("Log In");
@@ -59,7 +58,7 @@ public class LogInInterface {
             if(f == null)
             {
                 AlertBox.display("Alert","Nu such account.Try again.");
-                returnValue=0;
+                returnValue=null;
 
 
             }
@@ -67,14 +66,14 @@ public class LogInInterface {
             if((f.getName()).charAt(0) == 'C')
             {
                 AlertBox.display("Success", "Logged In as CLIENT");
-                returnValue=1;
+                returnValue=f.getName();
                 window.close();
 
             }
             else
             {
                 AlertBox.display("Success", "Logged In as MANAGER");
-                returnValue=2;
+                returnValue=f.getName();
                 window.close();
             }
 
@@ -82,11 +81,14 @@ public class LogInInterface {
 
         Button closeButton = new Button("Close");
         GridPane.setConstraints(closeButton,0,4);
-        closeButton.setOnAction(e -> window.close());
+        closeButton.setOnAction(e -> closeProgram(window));
+        window.setOnCloseRequest(e -> {
+            e.consume();
+            closeProgram(window);
+        });
 
         grid.getChildren().addAll(nameImput,nameLabel,
                 pasImput,pasLabel,
-
                 loginButton,closeButton);
 
         grid.setAlignment(Pos.CENTER);
@@ -97,6 +99,14 @@ public class LogInInterface {
         return returnValue;
 
     }
+
+    public static void closeProgram(Stage window)
+    {
+        if(!(AlertBox2.display("Leaving","Are you sure"))) return;
+        returnValue="ZZZ";
+        window.close();
+    }
+
 
 
 

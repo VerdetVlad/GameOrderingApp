@@ -1,13 +1,25 @@
-group 'SEF'
-version '1.0-SNAPSHOT'
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
 
-apply plugin: 'java'
 
+group = 'sef-project'
+version = '1.0'
+sourceCompatibility = '8'
+
+mainClassName = 'startScreen.StartScreen'
+
+javafx {
+    version = '8.0.241'
+    modules = ['java.controls', 'javafx.fxml']
+}
 
 jar {
     manifest {
-        attributes(
-                'Main-Class': 'Main'
-        )
+        attributes "Main-Class" : 'startScreen.StartScreen'
     }
+    archiveName = 'GOA.jar'
+
 }
