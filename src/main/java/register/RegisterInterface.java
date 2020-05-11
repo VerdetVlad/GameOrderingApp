@@ -64,7 +64,6 @@ public class RegisterInterface {
             if(InputCheck.badImput(nameImput.getText(),pasImput.getText())) return;
 
 
-            System.out.println("TEST");
             boolean check;
             if(typeImput.getValue().equals("Client")) check = true;
             else check = false;
