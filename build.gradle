@@ -6,31 +6,44 @@ plugins {
 }
 
 javafx{
-
-    modules = ['javafx.controls']
     version = '11.0.2'
+    modules = ['javafx.controls']
     mainClassName = 'startScreen.StartScreen'
 }
 
-
-group 'org.example'
-version '1.0-SNAPSHOT'
-
 repositories {
-    mavenLocal();
-    mavenCentral();
+    mavenLocal()
+    mavenCentral()
 }
 
 
 dependencies {
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.11.0.rc1'
     compile 'org.apache.commons:commons-io:1.3.2'
+    compile 'org.openjfx:javafx-base:11'
+    compile 'org.openjfx:javafx-graphics:11'
+    compile 'org.openjfx:javafx-controls:11'
+    compile 'org.openjfx:javafx-fxml:11'
 
 }
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+sourceCompatibility = '11'
+
+/*{
+    doFirst{
+        options.compilerArgs =[
+                '--module-path', classpath.asPath,
+                '--add-modules', 'javafx.controls,javafx.fxml'
+        ]
+    }
+}*/
 
 
 jar {
     manifest {
-        attributes 'Main-Class': 'Main'
+        attributes 'Main-Class': 'startScreen.StartScreen.'
     }
     from{
         configurations.compile.collect{it.isDirectory() ? it : zipTree(it)}
