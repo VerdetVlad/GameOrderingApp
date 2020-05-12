@@ -127,6 +127,8 @@ public class OrdersInterface {
 
         WriteManagerOrders.writeData(table.getItems(),fileName);
 
+        WriteClientMessage.send(a);
+
 
     }
 

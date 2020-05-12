@@ -1,3 +1,1 @@
-Manager_Name,Game_Name,Delivery_Time/Rejected
-Vlad,Last_of_Us,5
 Vlad,Last_of_Us,Rejected

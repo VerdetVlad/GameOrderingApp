@@ -5,6 +5,7 @@ import utilities.AlertBox;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 
 public class WriteClientMessage {
 
@@ -21,18 +22,32 @@ public class WriteClientMessage {
     }
 
 
-    public static void sendMessage(OrderObject client) throws Exception
+    private static void sendMessage(OrderObject client) throws Exception
     {
 
 
-        final File storeFile = new File(System.getProperty("user.dir") +
-                "\\Messages\\" + client.getUser() + ".txt");
+        final File path = new File(System.getProperty("user.dir") +
+                "\\Messages\\" + "C-" + client.getUser() + ".txt");
 
-            storeFile.getParentFile().mkdirs();
-            storeFile.createNewFile();
+        path.getParentFile().mkdirs();
+        path.createNewFile();
 
 
+        StringBuffer out = new StringBuffer("");
+        out.append("C-" + client.getUser() + "," + client.getGame() + "," + client.getStatus() + "\n");
 
+        BufferedReader readFile = new BufferedReader(new FileReader(path));
+        String line =  readFile.readLine();
+        while(line != null)
+        {
+            line = readFile.readLine();
+            out.append(line + "\n");
+        }
+        readFile.close();
+
+        FileWriter storeFW=new FileWriter(path);
+        storeFW.write(out.toString());
+        storeFW.close();
     }
 
 

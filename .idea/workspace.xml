@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84257ed0-9fe2-432e-896d-17a95d21d864" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Messages/C-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/orders/AnswerOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/orders/WriteClientMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/orders/WriteManagerOrders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Messages/C-b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Messages/Vlad.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -19,12 +17,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Messages/C-client.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Messages/C-client.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Messages/M-a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Messages/M-a.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stores/M-a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stores/M-a.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/list/GamesListInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/list/GamesListInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/orders/OrderObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/orders/OrderObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/orders/OrdersInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/orders/OrdersInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/orders/ReadOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/orders/ReadOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/orders/WriteClientMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/orders/WriteClientMessage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +147,7 @@
       <workItem from="1589207711928" duration="342000" />
       <workItem from="1589215340534" duration="2000000" />
       <workItem from="1589278533339" duration="2853000" />
-      <workItem from="1589282647566" duration="12261000" />
+      <workItem from="1589282647566" duration="14141000" />
     </task>
     <servers />
   </component>
@@ -186,22 +182,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1093" y="265" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589206037761" />
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1589299479902">
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom" timestamp="1589304505023">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589299479902" />
-    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1589299479902">
+    <state width="1877" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589304505023" />
+    <state width="1877" height="278" key="GridCell.Tab.0.center" timestamp="1589304505022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589299479902" />
-    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1589299479902">
+    <state width="1877" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589304505022" />
+    <state width="1877" height="278" key="GridCell.Tab.0.left" timestamp="1589304505022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589299479902" />
-    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1589299479902">
+    <state width="1877" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589304505022" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right" timestamp="1589304505022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589299479902" />
+    <state width="1877" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589304505022" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1589291383851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
