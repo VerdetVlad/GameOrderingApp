@@ -134,15 +134,26 @@ public class OrdersInterface {
 
     public static void delButtonClick(String fileName)
     {
-
-       /* if(!(AlertBox2.display("Warning","Are you sure?"))) return;
-
-        ObservableList <GameProduct> selectedProd, allProd;
+        ObservableList <OrderObject> selectedProd, allProd;
         allProd = table.getItems();
         selectedProd = table.getSelectionModel().getSelectedItems();
-        selectedProd.forEach(allProd::remove);
 
-        WriteStoreData.writeData(products,fileName);*/
+        OrderObject a = selectedProd.get(0);
+
+        if(!a.getStatus().equals("Pending"))
+        {
+            AlertBox.display("Error","Item status already set");
+            return;
+        }
+
+        a.setStatus("Rejected");
+
+        selectedProd.forEach(allProd::remove);
+        table.getItems().add(a);
+
+        WriteManagerOrders.writeData(table.getItems(),fileName);
+
+        WriteClientMessage.send(a);
     }
 
 
