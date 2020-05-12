@@ -104,12 +104,16 @@ public class OrdersInterface {
     public static void addButtonClick(String fileName)
     {
 
-        int n;
-        if( (n = AnswerOrder.display()) == -1) return;
+
 
         ObservableList <OrderObject> selectedProd, allProd;
         allProd = table.getItems();
         selectedProd = table.getSelectionModel().getSelectedItems();
+
+        if(selectedProd.size()==0) return;
+
+        int n;
+        if( (n = AnswerOrder.display()) == -1) return;
 
         OrderObject a = selectedProd.get(0);
 
@@ -134,9 +138,14 @@ public class OrdersInterface {
 
     public static void delButtonClick(String fileName)
     {
+
+
         ObservableList <OrderObject> selectedProd, allProd;
         allProd = table.getItems();
         selectedProd = table.getSelectionModel().getSelectedItems();
+
+        if(selectedProd.size()==0) return;
+        if(!AlertBox2.display("Warning","Are you sure?")) return;
 
         OrderObject a = selectedProd.get(0);
 
