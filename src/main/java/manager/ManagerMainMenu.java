@@ -1,5 +1,7 @@
 package manager;
 
+import manager.list.GamesListInterface;
+import manager.orders.OrdersInterface;
 import utilities.AlertBox;
 
 
@@ -52,8 +54,7 @@ public class ManagerMainMenu {
         });
 
         ordersButton.setOnAction(e -> {
-            AlertBox.display("ORDERS","ORDERS");
-
+            OrdersInterface.display(fileName);
         });
 
 

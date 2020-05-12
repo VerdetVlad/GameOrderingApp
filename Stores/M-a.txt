@@ -1,3 +1,4 @@
 ceva,Action,12.0
-312,Action,45.88
-I,Shooter,12.55
+asd,Action,21.0
+verea,Action,32.0
+ceva,Action,123.0
