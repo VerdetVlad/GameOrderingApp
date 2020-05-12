@@ -156,7 +156,7 @@ public class GamesListInterface {
         addGenre.setValue("Action");
         addPrice.clear();
 
-        WriteStoreData.writeData(products,fileName);
+        WriteStoreData.writeData(table.getItems(),fileName);
     }
 
     public static void delButtonClick(String fileName)
@@ -169,7 +169,7 @@ public class GamesListInterface {
         selectedProd = table.getSelectionModel().getSelectedItems();
         selectedProd.forEach(allProd::remove);
 
-        WriteStoreData.writeData(products,fileName);
+        WriteStoreData.writeData(table.getItems(),fileName);
     }
 
 

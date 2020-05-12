@@ -3,6 +3,7 @@ package manager.orders;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import manager.list.GameProduct;
+import utilities.AlertBox;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -18,6 +19,7 @@ public class ReadOrder {
         }
         catch (Exception e)
         {
+            AlertBox.display("Error","Problems reading data");
             return null;
         }
     }
@@ -31,8 +33,10 @@ public class ReadOrder {
         final File storeFile = new File(System.getProperty("user.dir") +
                 "\\Messages\\" + name + ".txt");
 
-        storeFile.getParentFile().mkdirs();
-        storeFile.createNewFile();
+
+            storeFile.getParentFile().mkdirs();
+            storeFile.createNewFile();
+
 
 
         BufferedReader readFile = new BufferedReader(new FileReader(storeFile));
@@ -51,16 +55,19 @@ public class ReadOrder {
 
     public static OrderObject makeOrder(String line)
     {
-        OrderObject game = new OrderObject();
+        OrderObject order = new OrderObject();
         String[] aux=null;
         int i;
 
         aux = line.split(",");
-        game.setUser(aux[0]);
+        String[] aux2 = null;
+        aux2 = aux[0].split("-");
+        order.setUser(aux2[1]);
 
-        game.setGame(aux[1]);
+        order.setGame(aux[1]);
 
+        order.setStatus(aux[2]);
 
-        return game;
+        return order;
     }
 }
