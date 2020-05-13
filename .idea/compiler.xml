@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="GOA_main" target="1.8" />
       <module name="GOA_test" target="1.8" />
+      <module name="untitled.main" target="11" />
+      <module name="untitled.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
