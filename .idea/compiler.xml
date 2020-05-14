@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="GOA.main" target="11" />
+      <module name="GOA.test" target="11" />
+      <module name="GOA_main" target="1.8" />
+      <module name="GOA_test" target="1.8" />
+      <module name="untitled.main" target="11" />
+      <module name="untitled.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
