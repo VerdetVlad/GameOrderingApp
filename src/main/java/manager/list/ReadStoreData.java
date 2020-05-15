@@ -52,7 +52,7 @@ public class ReadStoreData {
     public static GameProduct makeGame(String line)
     {
         GameProduct game = new GameProduct();
-        String[] aux=null;
+        String[] aux= new String[4];
         int i;
 
         aux = line.split(",");

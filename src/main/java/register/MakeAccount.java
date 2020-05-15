@@ -6,6 +6,7 @@ import java.io.*;
 public class MakeAccount {
 
 
+
     public static void create(String name, String password,
                               boolean check )//true = client; false = manager
     {
