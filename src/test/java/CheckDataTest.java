@@ -20,7 +20,7 @@ public class CheckDataTest {
         test = true;
 
 
-        final File usersDir = new File(System.getProperty("user.dir") + "\\Users");
+        final File usersDir = new File(System.getProperty("user.dir") + "\\Tests");
         String userLoc=null;
 
         for (String pathname : usersDir.list()) {

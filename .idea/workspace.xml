@@ -7,41 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84257ed0-9fe2-432e-896d-17a95d21d864" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_5_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_junit_jupiter_junit_jupiter_5_4_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Users/loginTest/passTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CheckDataTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MakeAccountTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Messages/C-Vlad.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Messages/C-Vlad.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Messages/M-a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Messages/M-a.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/GOA.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/GOA.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/untitled" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/untitled.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/list/ReadStoreData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/list/ReadStoreData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/register/MakeAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/register/MakeAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/loginTest/passTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CheckDataTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/CheckDataTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/MakeAccountTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/MakeAccountTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CheckDataTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-CheckDataTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-MakeAccountTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-MakeAccountTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/orders/OrdersInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/orders/OrdersInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/orders/WriteClientMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/orders/WriteClientMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CheckDataTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CheckDataTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MakeAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MakeAccountTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +80,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="GOA" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GOA" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="verification" type="c8890929:TasksNode$1" />
               </path>
               <path>
@@ -115,7 +112,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="ManagerBranch2" />
+        <entry key="$PROJECT_DIR$" value="jarFileBranch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -164,7 +161,7 @@
       <recent name="C:\Users\Vlad\Desktop\GOA\GameOrderingApp\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GameOrderingApp [test]">
+  <component name="RunManager" selected="Gradle.GOA [run]">
     <configuration name="GOA [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -248,11 +245,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GOA [run]" />
         <item itemvalue="Gradle.GameOrderingApp [test]" />
         <item itemvalue="Gradle.MakeAccountTest" />
         <item itemvalue="JUnit.MakeAccountTest" />
         <item itemvalue="JUnit.MakeAccountTest.create" />
-        <item itemvalue="Gradle.GOA [run]" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +274,7 @@
       <workItem from="1589347372779" duration="918000" />
       <workItem from="1589454617942" duration="1422000" />
       <workItem from="1589478240477" duration="4668000" />
-      <workItem from="1589547612045" duration="4175000" />
+      <workItem from="1589547612045" duration="5894000" />
     </task>
     <servers />
   </component>
@@ -320,38 +317,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1093" y="265" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589549000874" />
-    <state width="914" height="278" key="GridCell.Tab.0.bottom" timestamp="1589550522519">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1589565386310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589550522519" />
-    <state width="914" height="278" key="GridCell.Tab.0.center" timestamp="1589550522519">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589565386310" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1589565386310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589550522519" />
-    <state width="914" height="278" key="GridCell.Tab.0.left" timestamp="1589550522519">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589565386310" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1589565386310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589550522519" />
-    <state width="914" height="278" key="GridCell.Tab.0.right" timestamp="1589550522519">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589565386310" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1589565386310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589550522519" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1589549612537">
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589565386310" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1589565386311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589549612537" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1589549612536">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589565386311" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1589565386311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589549612536" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1589549612536">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589565386311" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1589565386311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589549612536" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1589549612536">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589565386311" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1589565386311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589549612536" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589565386311" />
     <state x="92" y="48" key="SettingsEditor" timestamp="1589549042695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -377,14 +374,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/manager/orders/OrdersInterface.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/CheckDataTest.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/src/main/java/manager/orders/WriteClientMessage.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

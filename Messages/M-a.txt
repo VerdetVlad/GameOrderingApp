@@ -1,2 +1,4 @@
-User,Jocu,Pending
-
+C-b,cerr,Pending
+C-s,mine craft,Pending
+C-e,test,Pending
+C-Vlad,God of War,Rejected

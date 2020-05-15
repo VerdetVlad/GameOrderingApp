@@ -56,13 +56,13 @@ public class OrdersInterface {
         Button closeButton = new Button("Close Window");
         closeButton.setOnAction(e-> window.close());
 
-        Button addButton = new Button("Answer order");
+        Button addButton = new Button(" Answer order ");
         addButton.setOnAction(e ->
         {
            addButtonClick(fileName);
         });
 
-        Button delButton = new Button("Reject order");
+        Button delButton = new Button(" Reject order ");
         delButton.setOnAction(e -> delButtonClick(fileName));
 
 
@@ -131,7 +131,7 @@ public class OrdersInterface {
 
         WriteManagerOrders.writeData(table.getItems(),fileName);
 
-        WriteClientMessage.send(a);
+        WriteClientMessage.send(a,fileName);
 
 
     }
@@ -162,7 +162,7 @@ public class OrdersInterface {
 
         WriteManagerOrders.writeData(table.getItems(),fileName);
 
-        WriteClientMessage.send(a);
+        WriteClientMessage.send(a,fileName);
     }
 
 

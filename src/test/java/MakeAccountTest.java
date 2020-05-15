@@ -24,11 +24,11 @@ public class MakeAccountTest {
 
 
         final String mainDir = System.getProperty("user.dir");
-        final File userDir = new File(mainDir + "\\Users");
+        final File userDir = new File(mainDir + "\\Tests");
         if (!userDir.exists()) userDir.mkdir();
 
 
-        File nameDir = new File(userDir.getName() + "\\nameTest");
+        File nameDir = new File(userDir.getName() + "\\regTest");
         if (!nameDir.exists()) nameDir.mkdir();
 
 
