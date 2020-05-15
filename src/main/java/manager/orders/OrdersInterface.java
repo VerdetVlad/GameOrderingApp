@@ -124,7 +124,7 @@ public class OrdersInterface {
         }
 
 
-        a.setStatus("Answered - " + n);
+        a.setStatus("Accepted - " + n);
 
         selectedProd.forEach(allProd::remove);
         table.getItems().add(a);
