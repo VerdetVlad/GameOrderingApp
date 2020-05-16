@@ -43,7 +43,6 @@ public class ReadOrder {
 
 
 
-
         Scanner line = new Scanner(storeFile);
 
 
@@ -67,9 +66,7 @@ public class ReadOrder {
         int i;
 
         aux = line.split(",");
-        String[] aux2 = null;
-        aux2 = aux[0].split("-");
-        order.setNameManager(aux2[1]);
+        order.setNameManager(aux[0]);
 
         order.setGame(aux[1]);
 

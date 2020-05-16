@@ -1,4 +1,0 @@
-asd,Action,13.0
-God of War,Shooter,432.0
-Borderland 2,Action,1111111.0
-DanceDanceREVOLUTION,Horror,43.12

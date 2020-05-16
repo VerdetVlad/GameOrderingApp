@@ -34,12 +34,12 @@ public class WriteClientMessage {
 
 
         StringBuffer out = new StringBuffer("");
-        out.append( manager + "," + client.getGame() + "," + client.getStatus() + "\n");
+        out.append( manager.substring(2) + "," + client.getGame() + "," + client.getStatus() + "\n");
 
         BufferedReader readFile = new BufferedReader(new FileReader(path));
         String line =  readFile.readLine();
 
-        String mask=manager + "," + client.getGame() + "," + "Pending";
+        String mask=manager.substring(2) + "," + client.getGame() + "," + "Pending";
         while(line != null)
         {
             if(!line.equals(mask))
