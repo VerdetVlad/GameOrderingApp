@@ -7,6 +7,7 @@ import javafx.scene.layout.VBox;
 import register.RegisterInterface;
 import login.LogInInterface;
 import manager.ManagerMainMenu;
+import client.ClientMainMenu;
 
 import javafx.geometry.Pos;
 
@@ -62,18 +63,15 @@ public class StartScreen extends Application {
 
             if(res.charAt(0)=='C')
             {
-                System.out.println("Client");
+                window.setScene(ClientMainMenu.getMenu(window, mainScene, res));
             }
             else if (res.charAt(0)=='M')
             {
-                window.setScene(ManagerMainMenu.getMenu(window,mainScene, res));
+                window.setScene(ManagerMainMenu.getMenu(window, mainScene, res));
             }
-
-
         });
 
         closeButton.setOnAction(e -> window.close());
-
 
         window.setScene(mainScene);
         window.show();
