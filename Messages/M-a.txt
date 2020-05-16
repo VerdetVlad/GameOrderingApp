@@ -1,7 +1,0 @@
-C-s,ceva,Pending
-C-s,Game,Pending
-C-s,123,Pending
-C-s,ceva,Pending
-C-s,Game,Pending
-C-s,ceva,Pending
-C-s,ceva,Pending

@@ -1,3 +1,0 @@
-Game,Action,123.0
-ceva,Horror,34.0
-123,Action,123.0

@@ -6,62 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84257ed0-9fe2-432e-896d-17a95d21d864" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Messages/C-s.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Users/C-s/password.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/list/WriteClientMes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M-a/password.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Users/M-a/password.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Messages/C-Ceva.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Messages/C-Vlad.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Messages/C-b.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Messages/C-c.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Messages/C-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Messages/M-a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Messages/M-a.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Messages/Vlad.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stores/M-Verdet Vlad.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stores/M-a.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Stores/M-a.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stores/M-manag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stores/ceva.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stores/storeA.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/C-dsa/password.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/distributions/GOA.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/GOA.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/CheckDataTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/CheckDataTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/MakeAccountTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/MakeAccountTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ReadOrderTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/ReadOrderTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/GOA" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/GOA" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/scripts/GOA.bat" beforeDir="false" afterPath="$PROJECT_DIR$/build/scripts/GOA.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-CheckDataTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-CheckDataTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-MakeAccountTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-MakeAccountTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ReadOrderTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-ReadOrderTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/list/OpenStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/list/OpenStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/list/WriteManagerMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/list/WriteManagerMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/orders/ReadOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/orders/ReadOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/orders/WriteClientMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/orders/WriteClientMessage.java" afterDir="false" />
-    </list>
+    <list default="true" id="84257ed0-9fe2-432e-896d-17a95d21d864" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,7 +85,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="jarFileBranch" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -307,7 +252,7 @@
       <workItem from="1589454617942" duration="1422000" />
       <workItem from="1589478240477" duration="4668000" />
       <workItem from="1589547612045" duration="9971000" />
-      <workItem from="1589639664483" duration="2334000" />
+      <workItem from="1589639664483" duration="2733000" />
     </task>
     <servers />
   </component>
