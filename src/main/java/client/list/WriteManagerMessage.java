@@ -1,12 +1,15 @@
 package client.list;
 
+import client.orders.Order;
 import manager.orders.OrderObject;
 import utilities.AlertBox;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
+import java.io.*;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Scanner;
 
 public class WriteManagerMessage
 {
@@ -33,17 +36,22 @@ public class WriteManagerMessage
         StringBuffer out = new StringBuffer("");
         out.append(client + "," + game + "," + "Pending" + "\n");
 
-        BufferedReader readFile = new BufferedReader(new FileReader(path));
-        String line =  readFile.readLine();
-        while(line != null)
-        {
-            line = readFile.readLine();
-            out.append(line + "\n");
+
+        try {
+            out.append(readFile(path.getPath(), StandardCharsets.UTF_8));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        readFile.close();
+
 
         FileWriter storeFW=new FileWriter(path);
         storeFW.write(out.toString());
         storeFW.close();
+    }
+
+    public static String readFile(String path, Charset encoding) throws IOException
+    {
+        byte[] encoded = Files.readAllBytes(Paths.get(path));
+        return new String(encoded, encoding);
     }
 }

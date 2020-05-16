@@ -1,4 +1,7 @@
-C-b,cerr,Pending
-C-s,mine craft,Pending
-C-e,test,Pending
-C-Vlad,God of War,Rejected
+C-s,ceva,Pending
+C-s,Game,Pending
+C-s,123,Pending
+C-s,ceva,Pending
+C-s,Game,Pending
+C-s,ceva,Pending
+C-s,ceva,Pending

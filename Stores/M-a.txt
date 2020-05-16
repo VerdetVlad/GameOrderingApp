@@ -1,4 +1,3 @@
-ceva,Action,12.0
-asd,Action,21.0
-verea,Action,32.0
-ceva,Action,123.0
+Game,Action,123.0
+ceva,Horror,34.0
+123,Action,123.0

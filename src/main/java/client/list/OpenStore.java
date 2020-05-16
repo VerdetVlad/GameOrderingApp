@@ -54,6 +54,9 @@ public class OpenStore
                 if(ans){
                     String game = table.getSelectionModel().getSelectedItems().get(0).getName();
                     WriteManagerMessage.send(manag, client, game);
+
+                    WriteClientMes.send(manag,client,game);
+
                 }
 
             });
