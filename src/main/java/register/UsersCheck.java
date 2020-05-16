@@ -8,6 +8,8 @@ public class UsersCheck {
     {
         final File usersDir = new File(System.getProperty("user.dir") + "\\Users");
 
+        if(!usersDir.exists()) return false;
+
         String userLoc=null;
 
         for (String pathname : usersDir.list()) {

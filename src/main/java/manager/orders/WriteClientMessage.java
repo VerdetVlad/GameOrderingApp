@@ -10,10 +10,10 @@ import java.io.FileWriter;
 public class WriteClientMessage {
 
 
-    public static void send(OrderObject a) {
+    public static void send(OrderObject a, String m) {
 
             try{
-                sendMessage(a);
+                sendMessage(a,m);
             }
             catch (Exception e)
             {
@@ -22,26 +22,30 @@ public class WriteClientMessage {
     }
 
 
-    private static void sendMessage(OrderObject client) throws Exception
+    private static void sendMessage(OrderObject client, String manager) throws Exception
     {
-
 
         final File path = new File(System.getProperty("user.dir") +
                 "\\Messages\\" + "C-" + client.getUser() + ".txt");
+
 
         path.getParentFile().mkdirs();
         path.createNewFile();
 
 
         StringBuffer out = new StringBuffer("");
-        out.append("C-" + client.getUser() + "," + client.getGame() + "," + client.getStatus() + "\n");
+        out.append( manager + "," + client.getGame() + "," + client.getStatus() + "\n");
 
         BufferedReader readFile = new BufferedReader(new FileReader(path));
         String line =  readFile.readLine();
+
+        String mask=manager + "," + client.getGame() + "," + "Pending";
         while(line != null)
         {
+            if(!line.equals(mask))
+                 out.append(line + "\n");
+
             line = readFile.readLine();
-            out.append(line + "\n");
         }
         readFile.close();
 

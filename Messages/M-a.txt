@@ -1,4 +1,4 @@
-C-b,Ceva,Answered - 4
-C-c,Minecraft,Answered - 5
-C-Vlad,God_Of_War,Rejected
-C-Ceva,Minecraft,Answered - 4
+C-b,cerr,Pending
+C-s,mine craft,Pending
+C-e,test,Pending
+C-Vlad,God of War,Rejected
