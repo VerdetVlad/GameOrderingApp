@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="FilesWritingAndReadingTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-05-17T07:18:01" hostname="DESKTOP-AO4LI05" time="0.023">
+<testsuite name="FilesWritingAndReadingTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-05-17T17:52:22" hostname="DESKTOP-AO4LI05" time="0.026">
   <properties/>
-  <testcase name="readObjectsTest" classname="FilesWritingAndReadingTest" time="0.003"/>
-  <testcase name="messageTest" classname="FilesWritingAndReadingTest" time="0.002"/>
-  <testcase name="fileIntegrityTest" classname="FilesWritingAndReadingTest" time="0.002"/>
-  <testcase name="logInTest" classname="FilesWritingAndReadingTest" time="0.015"/>
-  <system-out><![CDATA[111111111111
-33333333333333
-444444444444444444
-2222222222222
+  <testcase name="readObjectsTest" classname="FilesWritingAndReadingTest" time="0.002"/>
+  <testcase name="messageTest" classname="FilesWritingAndReadingTest" time="0.001"/>
+  <testcase name="fileIntegrityTest" classname="FilesWritingAndReadingTest" time="0.005"/>
+  <testcase name="logInTest" classname="FilesWritingAndReadingTest" time="0.016"/>
+  <system-out><![CDATA[1111111111
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

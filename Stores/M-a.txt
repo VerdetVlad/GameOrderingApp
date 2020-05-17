@@ -1,2 +1,0 @@
-ace,Action,123.0
-Far Cry 6,Action,45.0

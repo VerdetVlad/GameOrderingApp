@@ -1,3 +1,0 @@
-C-c,ace,Accepted - 4
-C-c,ace,Rejected
-C-c,Far Cry 6,Accepted - 3

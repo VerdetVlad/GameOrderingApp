@@ -1,5 +1,6 @@
+import junit.framework.TestCase;
 import org.junit.Assert;
-import org.junit.Before;
+
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -11,14 +12,15 @@ import static org.junit.Assert.*;
 
 
 
-public class FilesWritingAndReadingTest {
+public class FilesWritingAndReadingTest
+{
 
 
     @BeforeClass
     //creates files necessary for testing
     public static void create() {
 
-        System.out.println("111111111111");
+
 
         //logIN-----------------------------
         final File testDir = new File(System.getProperty("user.dir") + "\\Tests");
@@ -101,7 +103,8 @@ public class FilesWritingAndReadingTest {
     //makes sure all files were created
     //does not check if their contents are correct
     public void fileIntegrityTest() {
-        System.out.println("444444444444444444");
+
+        System.out.println("1111111111");
 
         boolean test = true;
 
@@ -135,7 +138,6 @@ public class FilesWritingAndReadingTest {
     //this method aims to find a particular user and check its password
     public void logInTest() {
 
-        System.out.println("2222222222222");
 
         boolean test; // used for checking if the creation took place correctly
         test = true;
@@ -193,7 +195,7 @@ public class FilesWritingAndReadingTest {
 
 
 
-        System.out.println("33333333333333");
+
 
 
         boolean test = true;

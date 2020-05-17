@@ -23,22 +23,38 @@ if (currentOS.isWindows()) {
     platform = 'mac'
 }
 
-/*test{
-    scanForTestClasses = false
-
-    include "MakeAccountTest"
-    include "CheckDataTest"
-}*/
 
 
 dependencies {
-    testCompile 'junit:junit:4.12'
-    compile 'junit:junit:4.12'
+
+    testImplementation("junit:junit:4.12")
+    testRuntime("org.junit.vintage:junit-vintage-engine:5.4.0")
+
+
     compile "org.openjfx:javafx-base:11:${platform}"
     compile "org.openjfx:javafx-graphics:11:${platform}"
     compile "org.openjfx:javafx-controls:11:${platform}"
     compile "org.openjfx:javafx-fxml:11:${platform}"
 }
+
+
+sourceSets {
+    intTest {
+        compileClasspath += sourceSets.main.output
+        runtimeClasspath += sourceSets.main.output
+    }
+}
+
+configurations {
+    intTestImplementation.extendsFrom implementation
+    intTestRuntimeOnly.extendsFrom runtimeOnly
+}
+
+test {
+    useJUnit()
+    maxHeapSize = '1G'
+}
+
 
 mainClassName = 'Main'
 
@@ -65,3 +81,6 @@ wrapper {
     gradleVersion = '5.2.1'
     distributionUrl = distributionUrl.replace("bin", "all")
 }
+
+
+
