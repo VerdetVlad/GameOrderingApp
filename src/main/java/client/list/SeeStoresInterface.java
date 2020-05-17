@@ -1,10 +1,13 @@
 package client.list;
 
+import client.orders.Order;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Modality;
 
 import javafx.scene.layout.*;
@@ -17,7 +20,6 @@ public class SeeStoresInterface {
 
     private static Stage window;
     private static TableView<Stores> table;
-    private static ObservableList<Stores> products = FXCollections.observableArrayList();
 
 
     public static void display(String fileName) {
@@ -38,6 +40,23 @@ public class SeeStoresInterface {
 
         Button clickButton = new Button("Open shop");
         clickButton.setOnAction(e -> clickButtonClick(fileName));
+
+
+       /* table.setOnMouseClicked(new EventHandler<MouseEvent>() {
+
+                                       @Override
+                                       public void handle(MouseEvent click) {
+
+                                           if (click.getClickCount() == 2) {
+                                               //Use ListView's getSelected Item
+                                               Stores a = table.getSelectionModel()
+                                                       .getSelectedItem();
+                                               OpenStore.display(a.getName(),fileName);
+                                               //use this to do whatever you want to. Open Link etc.
+                                           }
+                                       }
+                                   });*/
+
 
 
         HBox hBox = new HBox();
@@ -61,8 +80,8 @@ public class SeeStoresInterface {
     }
 
     public static ObservableList<Stores> getGames() {
-        products = ReadStores.getData();
-        return products;
+
+        return ReadStores.getData();
     }
 
     public static void clickButtonClick(String fileName)

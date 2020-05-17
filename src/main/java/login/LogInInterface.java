@@ -15,7 +15,8 @@ import java.io.File;
 
 public class LogInInterface {
 
-    private static TextField nameImput, pasImput;
+    private static TextField nameImput;
+    private static PasswordField pasImput;
     private static String returnValue;
 
     public static String display()
@@ -43,7 +44,7 @@ public class LogInInterface {
 
         Label pasLabel = new Label("Password:");
         GridPane.setConstraints(pasLabel,0,1);
-        pasImput = new TextField();
+        pasImput = new PasswordField();
         pasImput.setPromptText("password");
         GridPane.setConstraints(pasImput,1,1);
 

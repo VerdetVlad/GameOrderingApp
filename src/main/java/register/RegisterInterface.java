@@ -2,6 +2,8 @@ package register;
 
 
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.stage.*;
 
 import javafx.scene.Scene;
@@ -16,7 +18,7 @@ import utilities.SpellCheck;
 public class RegisterInterface {
 
     private static TextField nameImput, pasImput;
-    private static ChoiceBox<String> typeImput = new ChoiceBox<>();
+    private static ChoiceBox<String> typeImput;
 
 
     public static void display()
@@ -50,6 +52,8 @@ public class RegisterInterface {
 
         Label typeLabel = new Label("Account Type:");
         GridPane.setConstraints(typeLabel,0,3);
+        typeImput = new ChoiceBox<>();
+        typeImput.getItems().removeAll();
         typeImput.getItems().addAll("Client", "Manager");
         typeImput.setValue("Client");
         GridPane.setConstraints(typeImput,1,3);

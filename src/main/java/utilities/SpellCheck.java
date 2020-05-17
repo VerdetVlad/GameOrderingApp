@@ -7,7 +7,7 @@ public class SpellCheck {
 
     public static boolean containsSpecialChar(String name)
     {
-        Pattern p = Pattern.compile("[^a-z0-9_.]", Pattern.CASE_INSENSITIVE);
+        Pattern p = Pattern.compile("[^a-z0-9_. ]", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(name);
         boolean b = m.find();
 
