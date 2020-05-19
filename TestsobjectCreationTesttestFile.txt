@@ -1,2 +1,0 @@
-User,Game,Status
-Vlad,The Witcher 3,Accepted - 4

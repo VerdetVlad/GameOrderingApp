@@ -22,7 +22,6 @@ public class GamesListInterface {
     private static Stage window;
     private static TableView<GameProduct> table;
     private static TextField addName, addPrice;
-    private static ChoiceBox<String> addGenre = new ChoiceBox<>();
     private static ObservableList <GameProduct> products = FXCollections.observableArrayList();
 
 
@@ -54,6 +53,8 @@ public class GamesListInterface {
         addName = new TextField();
         addName.setPromptText("Name");
 
+        ChoiceBox<String> addGenre = new ChoiceBox<>();
+        addGenre.getItems().removeAll();
         addGenre.getItems().addAll("Action", "Adventure",
                                     "Horror","Puzzle","Racing",
                                     "Shooter","Strategy");
@@ -67,7 +68,7 @@ public class GamesListInterface {
         closeButton.setOnAction(e-> window.close());
 
         Button addButton = new Button("Add Game");
-        addButton.setOnAction(e -> addButtonClick(fileName));
+        addButton.setOnAction(e -> addButtonClick(fileName,addGenre));
 
 
 
@@ -111,7 +112,7 @@ public class GamesListInterface {
     }
 
 
-    public static void addButtonClick(String fileName)
+    public static void addButtonClick(String fileName,ChoiceBox<String> addGenre)
     {
         GameProduct game = new GameProduct();
 
