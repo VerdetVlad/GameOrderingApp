@@ -1,2 +1,0 @@
-user,game,newStatus
-altUser,altGame,altStatus
